@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Smith and the Mardi Gras Kings</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS styles -->
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Georgia', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #f7f7f7;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #e4d505; /* Mardi Gras yellow */
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #333; /* Set the desired color */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #b57edc; /* Set the desired hover color */
+        }
+
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-color: #b57edc; /* Vibrant lavender/lilac */
+            color: #ffffff;
+            padding: 60px;
+            padding-bottom: 30px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .embed-responsive {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #b57edc; /* Vibrant lavender/lilac */
+            padding: 10px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #b57edc; /* Vibrant lavender/lilac */
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 400px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        #booking-form-container {
+            border: 2px solid #4bc357; /* Border color (Vibrant sage) */
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffffff; /* Background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .facebook-icon-container {
+            padding-bottom: 20px; 
+        }
+
+        .card {
+            border: 2px solid #4bc357; /* Border color (Vibrant sage) */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            height: 350px;
+        }
+
+        .card-title {
+            color: #b57edc; /* Text color (Vibrant lavender/lilac) */
+            margin-bottom: 10px;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .performance-card {
+            margin-bottom: 20px;
+        }
+
+        .band-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        .performance-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/mgk_logo.png" alt="MGK Crown" width="32" height="32"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#meet-the-band">The Band</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#calendar">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bookingForm">Questions & Booking</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Zachary Smith and the Mardi Gras Kings</h1>
+        <!-- About Zachary Smith and the Mardi Gras Kings -->
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+
+        <div id="about" class="mt-4">
+            <h2>About Us</h2>
+            <p>Zachary Smith has been performing on the East Coast for more than 30 years. His group, the Mardi Gras Kings, brings a unique blend of zydeco, cajun, New Orleans jazz, and funk to every event. With a passion for delivering lively and unforgettable performances, we are dedicated to making your celebration truly exceptional.</p>
+        </div>
+
+        <!-- Band Members, Bios, and Discography sections -->
+        <div id="meet-the-band" class="mt-4 band-card-container">
+            <h2>The Band</h2>
+            <div class="profile-card">
+                <img src="images/zacksmith.jpg" alt="Zachary Smith" class="profile-img">
+                <div class="profile-info">
+                    <h3>Zachary Smith</h3>
+                    <p>30+ years of performing on the East Coast. Award-winning composer, arranger, and songwriter. North Texas trained trumpeter who can do a little of everything.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spotify Embed -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3O4uCYxtLTP60ZVRvBlNQQ?utm_source=generator" width="66%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div id="calendar" class="mt-4">
+            <h2>Upcoming Events</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://calendar.google.com/calendar/embed?src=b48f72abc121a918a215e876528a55afd86b215d9ba882d2e29fa9befa5e35d8%40group.calendar.google.com&ctz=America%2FNew_York" 
+                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="performances" class="mt-4 performance-card-container">
+            <h2>Performances</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card performance-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Millennium Stage</h5>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2k5MUdviyOg?si=1mEIjBu0Dc99sKdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card performance-card">
+                            <div class="card-body">
+                                <h5 class="card-title">The Mainstay</h5>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UFd6P7IGOsw?si=RRQHEk8My-tGp239" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+
+        <div id="booking-form-container" class="mt-4">
+            <h2>
+                <a href="https://www.vulture.com/article/david-s-pumpkins-saturday-night-live-tom-hanks-creation-oral-history.html">
+                    Any Questions?
+                </a>
+            </h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+
+
+        <div id="response-message"></div>
+
+        <div class="mt-4 facebook-icon-container">
+            <a href="https://www.facebook.com/profile.php?id=100054111555347&sk=about&locale=zh_HK" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook_social media_social_icon.png" alt="Facebook Icon" width="50" height="50">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function submitForm() {
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+                // Call your AWS Lambda function using AJAX
+            $.ajax({
+                type: "POST",
+                url: "https://0rwl4dz0x9.execute-api.us-east-1.amazonaws.com",
+                contentType: "application/json",
+                data: JSON.stringify({ name: name, email: email, message: message }),
+                crossDomain: true, // Enable CORS
+                success: function (response) {
+                    $("#response-message").html("<p>Email sent successfully!</p>");
+
+                    // Clear the form fields
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#message").val("");
+                },
+                error: function (error) {
+                    alert("Error sending email. Please try again later.");
+                    console.error(error);
+                }
+            });
+        };
+    </script>
+
+    <!-- Your custom JS scripts -->
+    <!-- Add more scripts as needed -->
+
+</body>
+
+</html>
