@@ -10,135 +10,7 @@
     <!-- Bootstrap CSS link -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS styles -->
-    <style>
-        body {
-            background-color: #f7f7f7;
-            font-family: 'Georgia', sans-serif;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        .navbar {
-            background-color: #f7f7f7;
-        }
-
-        .navbar-dark .navbar-toggler-icon {
-            background-color: #e4d505; /* Mardi Gras yellow */
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: #333; /* Set the desired color */
-        }
-
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: #b57edc; /* Set the desired hover color */
-        }
-
-        .container {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .jumbotron {
-            background-color: #b57edc; /* Vibrant lavender/lilac */
-            color: #ffffff;
-            padding: 60px;
-            padding-bottom: 30px;
-            margin-top: 60px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .embed-responsive {
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #b57edc; /* Vibrant lavender/lilac */
-            padding: 10px;
-        }
-
-        .profile-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid #b57edc; /* Vibrant lavender/lilac */
-            border-radius: 12px;
-            padding: 20px;
-            max-width: 400px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .profile-info {
-            text-align: center;
-        }
-
-        #booking-form-container {
-            border: 2px solid #4bc357; /* Border color (Vibrant sage) */
-            border-radius: 12px;
-            padding: 20px;
-            background-color: #ffffff; /* Background color */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .facebook-icon-container {
-            padding-bottom: 20px; 
-        }
-
-        .card {
-            border: 2px solid #4bc357; /* Border color (Vibrant sage) */
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 600px;
-            height: 350px;
-        }
-
-        .card-title {
-            color: #b57edc; /* Text color (Vibrant lavender/lilac) */
-            margin-bottom: 10px;
-        }
-
-        .card-body {
-            padding: 15px;
-        }
-
-        .performance-card {
-            margin-bottom: 20px;
-        }
-
-        .band-card-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 30px;
-        }
-
-        .performance-card-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 30px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -155,13 +27,16 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#meet-the-band">The Band</a>
+                    <a class="nav-link" href="#meet-the-band">Band</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#repertoire">Repertoire</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#calendar">Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#bookingForm">Questions & Booking</a>
+                    <a class="nav-link" href="#bookingForm">Contact</a>
                 </li>
             </ul>
         </div>
@@ -173,98 +48,340 @@
         <!-- About Zachary Smith and the Mardi Gras Kings -->
     </div>
 
-    <!-- Content -->
-    <div class="container">
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
+    </div>
 
-        <div id="about" class="mt-4">
-            <h2>About Us</h2>
-            <p>Zachary Smith has been performing on the East Coast for more than 30 years. His group, the Mardi Gras Kings, brings a unique blend of zydeco, cajun, New Orleans jazz, and funk to every event. With a passion for delivering lively and unforgettable performances, we are dedicated to making your celebration truly exceptional.</p>
+    <div class="container two-column-layout">
+        <div class="col-md-6" id="about">
+            <div class="section-card">
+                <h3 class="text-purple">About Us</h3>
+                <p>Zachary Smith has been performing on the East Coast for more than 30 years. His
+                    group, Zachary Smith &amp; the Mardi Gras Kings (formerly known as the “Dixie Power
+                    Trio”) brings a unique blend of zydeco, Cajun, New Orleans jazz and funk to every
+                    show. With a passion for delivering lively and unforgettable performances, they are
+                    dedicated to making your event truly exceptional.
+                </p>
+            </div>
+            <iframe class="spotify-embed" src="https://open.spotify.com/embed/album/3O4uCYxtLTP60ZVRvBlNQQ?utm_source=generator" width="100%" height="200" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
+    
+        <div class="col-md-6">
+            <div id="gallery" class="section-card carousel slide" data-ride="carousel">
+                <h3 class="text-purple">Gallery</h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/NLB.png" class="d-block w-100 fixed-gallery-image" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/NLB_wedding.png" class="d-block w-100 fixed-gallery-image" alt="Image 2">
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <a class="carousel-control-prev" href="#gallery" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gallery" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
-        <!-- Band Members, Bios, and Discography sections -->
-        <div id="meet-the-band" class="mt-4 band-card-container">
-            <h2>The Band</h2>
-            <div class="profile-card">
-                <img src="images/zacksmith.jpg" alt="Zachary Smith" class="profile-img">
-                <div class="profile-info">
-                    <h3>Zachary Smith</h3>
-                    <p>30+ years of performing on the East Coast. Award-winning composer, arranger, and songwriter. North Texas trained trumpeter who can do a little of everything.</p>
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
+    </div>
+
+    <!-- Band Members, Bios, and Discography sections -->
+    <div id="meet-the-band" class="container two-column-layout">
+        <div class="row">
+            <!-- Zachary Smith's Card -->
+            <div class="col-md-6">
+                <div class="section-card">
+                    <h3 class="text-purple">Zachary Smith</h3>
+                    <img src="images/zacksmith.jpg" alt="Zachary Smith" class="profile-img">
+                    <div class="profile-info">
+                        <p>30+ years of performing on the East Coast. Award winning composer,
+                            arranger, jazz clinician, and songwriter. U. of North Texas trained trumpeter (and
+                            accordion, piano, vocals, harmonica, rubboard, etc.)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partial List of Cats Who Have Played with the Band -->
+            <div class="col-md-6">
+                <div class="section-card">
+                    <h4 class="text-purple">The Mardi Gras Kings</h3>
+                    <p>(A partial list of cats who have played with the band)</p>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><strong>Guitar:</strong> Chuck Underwood, Shawn Purcell, Kent Hall, John Lee, Wayne Wilkinson</li>
+                        <li><strong>Bass:</strong> Larry Melton, Paul Henry, Dallas Smith, Andy Kochenour</li>
+                        <li><strong>Drums:</strong> Byron McWilliams, Andy Hamburger, Kyle Smith, Gary Crockett, Toby Fairchild, Mike Flaherty</li>
+                        <li><strong>Horns:</strong> Dan Haverstock, Bruce Swaim, Daryl Brenzyl, Davison Smith, Tom Holtz, Jan Duga</li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Spotify Embed -->
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3O4uCYxtLTP60ZVRvBlNQQ?utm_source=generator" width="66%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
+    </div>
 
-        <div id="calendar" class="mt-4">
-            <h2>Upcoming Events</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://calendar.google.com/calendar/embed?src=b48f72abc121a918a215e876528a55afd86b215d9ba882d2e29fa9befa5e35d8%40group.calendar.google.com&ctz=America%2FNew_York" 
-                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <div class="container two-column-layout">
+
+        <div id="repertoire" class="mt-4 container section-card">
+                <!-- Section Title -->
+                <h2 class="text-purple text-center">Repertoire</h2>
+        
+                <!-- Accordion -->
+                <div class="accordion">
+                    <!-- Zydeco -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('zydeco')"><strong>Zydeco</strong></div>
+                        <div class="accordion-content" id="zydeco-content">
+                            <ul class="list-unstyled">
+                                <li>Baby Let Me Hold Your Hand</li>
+                                <li>Cupid Shuffle</li>
+                                <li>Don’t Mess With My Toot Toot</li>
+                                <li>East Coast Zydeco</li>
+                                <li>Eh Tete Fille</li>
+                                <li>Hey Baby</li>
+                                <li>Hey Good Lookin’</li>
+                                <li>In The Summertime</li>
+                                <li>Jambalaya</li>
+                                <li>Let’s Go Zydeco</li>
+                                <li>Mellow Sousaphone</li>
+                                <li>My Girl Josephine</li>
+                                <li>Paper In My Shoe</li>
+                                <li>You Never Can Tell</li>
+                                <li>Zack’s Zydeco Two-Step</li>
+                                <li>Zydeco Boogaloo</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Cajun -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('cajun')"><strong>Cajun</strong></div>
+                        <div class="accordion-content" id="cajun-content">
+                            <ul class="list-unstyled">
+                                <li>Colinda</li>
+                                <li>Diggy Diggy Lo</li>
+                                <li>Jolie Blonde</li>
+                                <li>Regardez La Femme</li>
+                                <li>Un Autre Soir D’ennui</li>
+                                <li>You Don’t Call Me No More</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Swing Tunes -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('swing')"><strong>Swing Tunes</strong></div>
+                        <div class="accordion-content" id="swing-content">
+                            <ul class="list-unstyled">
+                                <li>Ain’t Misbehavin’</li>
+                                <li>All Of Me</li>
+                                <li>Bye Bye Blackbird</li>
+                                <li>It Had To Be You</li>
+                                <li>Love</li>
+                                <li>It’s Only A Paper Moon</li>
+                                <li>Perdido</li>
+                                <li>St. Louis Blues</li>
+                                <li>Sunny Side of the Street</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Dixieland Tunes -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('dixieland')"><strong>Dixieland Tunes</strong></div>
+                        <div class="accordion-content" id="dixieland-content">
+                            <ul class="list-unstyled">
+                                <li>Avalon</li>
+                                <li>Basin Street Blues</li>
+                                <li>Bill Bailey</li>
+                                <li>Blues My Naughty Sweetie</li>
+                                <li>I Found A New Baby</li>
+                                <li>May the Circle Medley</li>
+                                <li>Someday You’ll Be Sorry</li>
+                                <li>St. James Infirmary</li>
+                                <li>St. Louis Blues</li>
+                                <li>Struttin’ With Some Barbecue</li>
+                                <li>Sunny Side of the Street</li>
+                                <li>Sweet Georgia Brown</li>
+                                <li>Sweet Lorraine</li>
+                                <li>Way Down Yonder In N.O.</li>
+                                <li>West End Blues</li>
+                                <li>When My Dreamboat</li>
+                                <li>Wild Man Blues</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Second Line Tunes -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('secondline')"><strong>Second Line Tunes</strong></div>
+                        <div class="accordion-content" id="secondline-content">
+                            <ul class="list-unstyled">
+                                <li>Audobon Zoo</li>
+                                <li>Bourbon Street Parade</li>
+                                <li>Doin’ The 2nd Line</li>
+                                <li>Joe Avery’s Piece</li>
+                                <li>Lil Liza Jane</li>
+                                <li>Washington & Lee Swing</li>
+                                <li>When The Saints Go Marching</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Ballads -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('ballads')"><strong>Ballads</strong></div>
+                        <div class="accordion-content" id="ballads-content">
+                            <ul class="list-unstyled">
+                                <li>Buddy Bolden’s Blues</li>
+                                <li>Do You Know What It Means</li>
+                                <li>Just A Closer Walk With Thee</li>
+                                <li>Mo Better Blues</li>
+                                <li>New Orleans</li>
+                                <li>Old Folks</li>
+                                <li>Old Levy Stomp</li>
+                                <li>Sleep Walk</li>
+                                <li>Sleepy Time Down South</li>
+                                <li>What A Wonderful World</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Groove Tunes -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('groove')"><strong>Groove Tunes</strong></div>
+                        <div class="accordion-content" id="groove-content">
+                            <ul class="list-unstyled">
+                                <li>Big Chief</li>
+                                <li>Cantaloup Island</li>
+                                <li>Cissy Strut</li>
+                                <li>Congo Square</li>
+                                <li>Cold Duck Time</li>
+                                <li>French Quarter Funk</li>
+                                <li>Groove Merchant</li>
+                                <li>Happy Song</li>
+                                <li>Hey Pocky Way</li>
+                                <li>Hurricane Season</li>
+                                <li>Iko Iko</li>
+                                <li>Mardi Gras Mambo</li>
+                                <li>Mercy Mercy Mercy</li>
+                                <li>My Feet Can’t Fail Me Now</li>
+                                <li>Strasbourg-St. Denis</li>
+                                <li>Ya Ya</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Rock and Roll -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion('rocknroll')"><strong>Rock and Roll</strong></div>
+                        <div class="accordion-content" id="rocknroll-content">
+                            <ul class="list-unstyled">
+                                <li>I’m Walkin’</li>
+                                <li>It’s All Over Now</li>
+                                <li>Mardi Gras In New Orleans</li>
+                                <li>Mustang Sally</li>
+                                <li>Rockin’ Pneumonia</li>
+                                <li>School Day</li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </div>
 
-        <div id="performances" class="mt-4 performance-card-container">
-            <h2>Performances</h2>
+        <div id="calendar" class="container mt-4">
+            <!-- Upcoming Events -->
+            <div class="section-card">
+                <h2 class="text-purple">Calendar</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=b48f72abc121a918a215e876528a55afd86b215d9ba882d2e29fa9befa5e35d8%40group.calendar.google.com&ctz=America%2FNew_York" 
+                            style="border: 0" width="600" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
+    </div>
+
+    <div id="performances" class="containe two-column-layout">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="performance-card">
+                        <h5 class="card-title">Millennium Stage</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2k5MUdviyOg?si=1mEIjBu0Dc99sKdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card performance-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Millennium Stage</h5>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2k5MUdviyOg?si=1mEIjBu0Dc99sKdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card performance-card">
-                            <div class="card-body">
-                                <h5 class="card-title">The Mainstay</h5>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UFd6P7IGOsw?si=RRQHEk8My-tGp239" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
+                    <div class="performance-card">
+                            <h5 class="card-title">The Mainstay</h5>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UFd6P7IGOsw?si=RRQHEk8My-tGp239" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>   
-        
-
-        <div id="booking-form-container" class="mt-4">
-            <h2>
-                <a href="https://www.vulture.com/article/david-s-pumpkins-saturday-night-live-tom-hanks-creation-oral-history.html">
-                    Any Questions?
-                </a>
-            </h2>
-            <form id="bookingForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
-            </form>
         </div>
+    </div>   
+    
 
-
-        <div id="response-message"></div>
-
-        <div class="mt-4 facebook-icon-container">
-            <a href="https://www.facebook.com/profile.php?id=100054111555347&sk=about&locale=zh_HK" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook_social media_social_icon.png" alt="Facebook Icon" width="50" height="50">
-            </a>
-        </div>
-
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
     </div>
+
+    <div id="booking-form-container" class="mt-4">
+        <h2 class="text-purple">
+            <a href="https://www.vulture.com/article/david-s-pumpkins-saturday-night-live-tom-hanks-creation-oral-history.html">
+                Any Questions?
+            </a>
+        </h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <div id="response-message"></div>
+
+
+    <div class="container divider">
+        <hr class="dotted-divider"> <!-- Dotted line -->
+    </div>
+
+    <div class="mt-4 facebook-icon-container">
+        <a href="https://www.facebook.com/profile.php?id=100054111555347&sk=about&locale=zh_HK" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook_social media_social_icon.png" alt="Facebook Icon" width="50" height="50">
+        </a>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="footer">
+            <p>&copy; 2024 Zachary Smith | Powered by <img src="images/aws-icon.png" alt="AWS Icon" width="40" height="40"> & <a href="http://www.arielleworld.com/jacoby" target="_blank"> Coby</a></p></p>
+        </div>        
+    </footer>
+
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -297,8 +414,12 @@
         };
     </script>
 
-    <!-- Your custom JS scripts -->
-    <!-- Add more scripts as needed -->
+    <script>
+        function toggleAccordion(section) {
+            var content = document.getElementById(section + '-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 
 </body>
 

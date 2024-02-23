@@ -1,0 +1,253 @@
+body {
+    background: linear-gradient(to right, #065317, #470279); /* Subtle gradient from light gray to slightly darker gray */
+    font-family: 'Georgia', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background: linear-gradient(to right, #065317, #470279); /* Subtle gradient from light gray to slightly darker gray */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #d08f01; /* Mardi Gras yellow */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Set the desired color */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Set the desired hover color */
+}
+
+.container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: transparent; /* Vibrant lavender/lilac */
+    color: #ffffff;
+    padding: 60px;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.embed-responsive {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #470279;
+    padding: 10px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #470279; 
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+#booking-form-container {
+    border: 2px solid white; /* Add a 2px solid white border */
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #d08f01; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+.facebook-icon-container {
+    padding-bottom: 20px; 
+}
+
+.card {
+    border: 2px solid #4bc357; /* Border color (Vibrant sage) */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 350px;
+}
+
+.card-title {
+    color: #470279; /* Text color (Vibrant lavender/lilac) */
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.performance-card {
+    margin-bottom: 20px;
+    background-color: #d08f01; /* Set the background color for the section card */
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    width: 600px;
+    height: 400px;
+    border: 2px solid white;
+}
+
+.band-card-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    max-width: 800px;
+}
+
+.performance-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.text-purple {
+    color: #470279; /* Set the desired purple color */
+}
+
+@media (min-width: 1200px) {
+    .two-column-layout {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 48%; /* Adjust the width as needed */
+    }
+}
+
+/* One-column layout for smaller screens */
+@media (max-width: 1199px) {
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+.rounded-card {
+    border: 2px solid #4bc357; /* Border color (Vibrant sage) */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+    max-width: 400px;
+    margin: auto;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    color: #f5f0f0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #470279;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-content {
+    display: none;
+    
+    padding: 10px;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.solid-divider {
+    border-top: 2px solid #333; /* Adjust the color and thickness as needed */
+}
+
+.dotted-divider {
+    border-top: 15px dotted #d08f01; /* Adjust the color and thickness as needed */
+}
+
+.section-card {
+    margin: auto;
+    border: 2px solid white; /* Add a 2px solid white border */
+    align-self: center;
+    max-width: 600px;
+    background-color: #d08f01; /* Set the background color for the section card */
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    margin-bottom: 20px; /* Add margin at the bottom to create space between sections */
+}
+
+.spotify-embed {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.spotify-card {
+    background-color: #f8f9fa; /* Set the background color for the section card */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.fixed-gallery-image {
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: 330px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.carousel-inner {
+    max-height: 450px; /* Set a fixed height for the carousel */
+    overflow: hidden; /* Hide any overflow beyond the set height */
+}
+
+.footer {
+    background: linear-gradient(to right, #065317, #470279); /* Subtle gradient from light gray to slightly darker gray */
+    padding: 5px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    color: #f8f9fa; /* Adjust the text color as needed */
+}
