@@ -32,16 +32,16 @@ body {
 }
 
 .jumbotron {
-    background-color: transparent; /* Vibrant lavender/lilac */
+    background-color: #fde5b0cd;/* Vibrant lavender/lilac */
     color: #ffffff;
-    padding: 60px;
     padding-bottom: 0px;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    width: 100%;
+    width: 600px;
 }
 
 .embed-responsive {
@@ -78,12 +78,13 @@ h2 {
 }
 
 #booking-form-container {
+    align-self: center;
     border: 2px solid white; /* Add a 2px solid white border */
     border-radius: 12px;
     padding: 20px;
     background-color: #d08f01; /* Background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 450px;
+    width: 300px;
 }
 
 .facebook-icon-container {
@@ -109,7 +110,8 @@ h2 {
 }
 
 .performance-card {
-    margin-bottom: 20px;
+    align-self: center;
+    margin: auto;
     background-color: #d08f01; /* Set the background color for the section card */
     padding: 20px; /* Adjust the padding as needed */
     border-radius: 10px; /* Add border-radius for rounded corners */
@@ -141,11 +143,15 @@ h2 {
 @media (min-width: 1200px) {
     .two-column-layout {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
+        align-items: center;
     }
 
     .column {
         width: 48%; /* Adjust the width as needed */
+        justify-self: center;
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -210,6 +216,7 @@ h2 {
     border: 2px solid white; /* Add a 2px solid white border */
     align-self: center;
     max-width: 600px;
+    height:fit-content;
     background-color: #d08f01; /* Set the background color for the section card */
     padding: 20px; /* Adjust the padding as needed */
     border-radius: 10px; /* Add border-radius for rounded corners */
@@ -250,4 +257,9 @@ h2 {
 .footer p {
     margin: 0;
     color: #f8f9fa; /* Adjust the text color as needed */
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto; /* Ensures the aspect ratio of the image is maintained */
 }
